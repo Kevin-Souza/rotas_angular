@@ -1,1 +1,33 @@
-<p>second works!</p>
+<div class="mt-4">
+    <h3 class="Title text-success" style="margin: 10px;">Quitanda</h3>
+    <button type="button" (click)="exibirTabela()" class="btn btn-success">{{this.textoBotao2}}</button>
+    
+    <table class="table table-striped" *ngIf="this.esconderTabela">
+        <thead>
+            <tr>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">Nome</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Tamanho</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Avaliação</th>
+                <th scope="col">Comprar</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let item of modelo">
+                <!-- <th scope="row"></th> -->
+                <td>{{item.title}}</td>
+                <td>{{item.type}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.height}}</td>
+                <td>{{item.width}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.rating}}</td>
+                <td>{{item.comprar}}</td>
+            </tr>
+        </tbody>
+    </table>
+    

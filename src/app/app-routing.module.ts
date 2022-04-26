@@ -6,7 +6,7 @@ import { SecondComponent } from './second/second.component';
 
 const routes: Routes = [
 {path:"manter-cliente", component:FirstComponent},
-{path:"second-component", component:SecondComponent}
+{path:"Produtos", component:SecondComponent}
 
 ];
 
